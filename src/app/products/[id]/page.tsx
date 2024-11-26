@@ -9,6 +9,7 @@ import { products } from "../../../../products";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import useCartStore from "@/lib/cartStore";
 
 type Props = {};
 
@@ -18,6 +19,16 @@ const Product = (props: Props) => {
   const product = products.find(
     (product) => product.id === parseInt(id as string)
   );
+
+  const { addProduct, removeProduct, getProductIds } = useCartStore();
+
+  const handleAdd = () => {
+    addProduct(product.id); // Add product ID product.id
+  };
+
+  const handleRemove = () => {
+    removeProduct(product.id); // Remove product ID product.id
+  };
 
   console.log(product);
 
@@ -42,7 +53,7 @@ const Product = (props: Props) => {
           Price: <span className="text-primary">{product?.price}$</span>
         </h3>
 
-        <Button>Add to Cart</Button>
+        <Button onClick={handleAdd}>Add to Cart</Button>
       </MaxWidthWrapper>
     </div>
   );
