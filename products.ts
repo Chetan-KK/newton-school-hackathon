@@ -4,7 +4,7 @@ export const products = [
     name: "Super Glasses Classic",
     description:
       "A timeless classic design with a modern twist, perfect for any occasion.",
-    image: "/products/1.webp",
+    image: "/products/1.png",
     price: 49.99,
     size: "Medium",
     color: "Black",
@@ -19,7 +19,7 @@ export const products = [
     name: "Super Glasses Aviator",
     description:
       "Stylish aviator glasses that offer both style and comfort, ideal for sunny days.",
-    image: "/products/2.webp",
+    image: "/products/2.png",
     price: 59.99,
     size: "Large",
     color: "Gold",
@@ -34,7 +34,7 @@ export const products = [
     name: "Super Glasses Retro",
     description:
       "Retro-inspired frames that bring a unique flair to any outfit.",
-    image: "/products/3.webp",
+    image: "/products/3.png",
     price: 54.99,
     size: "Small",
     color: "Tortoise Shell",
@@ -48,7 +48,7 @@ export const products = [
     id: 4,
     name: "Super Glasses Urban",
     description: "Sleek and urban design, perfect for the modern minimalist.",
-    image: "/products/4.webp",
+    image: "/products/4.png",
     price: 64.99,
     size: "Medium",
     color: "Matte Black",
@@ -63,7 +63,7 @@ export const products = [
     name: "Super Glasses Vintage",
     description:
       "Vintage-inspired frames for a bold, unique look that stands out.",
-    image: "/products/5.webp",
+    image: "/products/5.png",
     price: 69.99,
     size: "Medium",
     color: "Amber",
@@ -78,7 +78,7 @@ export const products = [
     name: "Super Glasses Sport",
     description:
       "Durable and lightweight glasses for active lifestyles, perfect for outdoor activities.",
-    image: "/products/6.webp",
+    image: "/products/6.png",
     price: 74.99,
     size: "Large",
     color: "Navy Blue",
@@ -93,7 +93,7 @@ export const products = [
     name: "Super Glasses Elegance",
     description:
       "Elegant and refined glasses that offer a sophisticated look for any formal occasion.",
-    image: "/products/7.webp",
+    image: "/products/7.png",
     price: 79.99,
     size: "Medium",
     color: "Rose Gold",

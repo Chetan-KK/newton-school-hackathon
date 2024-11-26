@@ -7,6 +7,8 @@ import { useParams } from "next/navigation";
 import React from "react";
 import { products } from "../../../../products";
 import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 type Props = {};
 
@@ -33,12 +35,14 @@ const Product = (props: Props) => {
           height={500}
           width={500}
           className="bg-red-200 border border-border rounded-lg"
-          src={product?.image}
+          src={product?.image as string}
           alt="image"
         />
-        <h3 className="text-3xl font-bold mt-5">
+        <h3 className="text-3xl font-bold mt-5 mb-5">
           Price: <span className="text-primary">{product?.price}$</span>
         </h3>
+
+        <Button>Add to Cart</Button>
       </MaxWidthWrapper>
     </div>
   );
