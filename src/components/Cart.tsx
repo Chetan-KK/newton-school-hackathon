@@ -45,8 +45,8 @@ const Cart = (props: Props) => {
             X
           </Button>
           <h1 className="text-4xl font-bold ml-4">Cart</h1>
-          {productsInCart.map((product) => (
-            <div className="flex gap-3 border-b border-border p-5">
+          {productsInCart.map((product, _) => (
+            <div key={_} className="flex gap-3 border-b border-border p-5">
               <Image
                 height={100}
                 width={100}
@@ -66,6 +66,7 @@ const Cart = (props: Props) => {
               </div>
             </div>
           ))}
+          <Button>Checkout</Button>
         </div>
       )}
     </div>
