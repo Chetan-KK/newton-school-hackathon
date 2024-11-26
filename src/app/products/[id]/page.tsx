@@ -23,11 +23,15 @@ const Product = (props: Props) => {
   const { addProduct, removeProduct, getProductIds } = useCartStore();
 
   const handleAdd = () => {
-    addProduct(product.id); // Add product ID product.id
+    if (product) {
+      addProduct(product.id); // Add product ID product.id
+    }
   };
 
   const handleRemove = () => {
-    removeProduct(product.id); // Remove product ID product.id
+    if (product) {
+      removeProduct(product.id); // Remove product ID product.id
+    }
   };
 
   console.log(product);

@@ -50,7 +50,7 @@ const Cart = (props: Props) => {
               <Image
                 height={100}
                 width={100}
-                className="border border-border rounded-lg"
+                className="border border-border rounded-lg object-cover"
                 src={product?.image as string}
                 alt="image"
               />
